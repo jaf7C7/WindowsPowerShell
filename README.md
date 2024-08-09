@@ -2,6 +2,7 @@
 
 To set this up on a new (Windows) machine:
 ```
+PS > Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 PS > Set-Location $env:USERPROFILE\Documents
 PS > Remove-Item -Recurse WindowsPowerShell\
 PS > git clone git@github.com:jaf7C7/WindowsPowerShell
