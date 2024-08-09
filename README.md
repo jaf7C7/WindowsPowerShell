@@ -2,7 +2,9 @@
 
 To set this up on a new (Windows) machine:
 ```
-PS > Remove-Item -Recurse ~\Documents\WindowsPowerShell\ && git -C ~\Documents clone git@github.com:jaf7C7/WindowsPowerShell
+PS > Set-Location $env:USERPROFILE\Documents
+PS > Remove-Item -Recurse WindowsPowerShell\
+PS > git clone git@github.com:jaf7C7/WindowsPowerShell
 ```
 
 On Linux:
